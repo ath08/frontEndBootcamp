@@ -64,7 +64,7 @@ const evaluations = [
   },
 ];
 
-const getMicScoreStudName = (evaluations) => {
+const getMinScoreStudName = (evaluations) => {
   let minScore = evaluations[0].score;
   let minScoreStudentName;
 
@@ -77,4 +77,4 @@ const getMicScoreStudName = (evaluations) => {
   return minScoreStudentName;
 };
 
-getMicScoreStudName(evaluations); // => 'Sarah Conor'
+getMinScoreStudName(evaluations); // => 'Sarah Conor'
