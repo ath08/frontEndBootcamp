@@ -66,16 +66,13 @@ const evaluations = [
 
 const getMicScore = (evaluations) => {
   let minScore = evaluations[0].score;
-  let minScoreStudent;
 
   for (let i = 0; i < evaluations.length; i++) {
     if (evaluations[i].score < minScore) {
       minScore = evaluations[i].score;
-      minScoreStudent = evaluations[i];
     }
   }
-  //return minScoreStudent; //return student info who has min scor
-  return minScore; //return only min score value
+  return minScore;
 };
 
 getMicScore(evaluations); // => 25
